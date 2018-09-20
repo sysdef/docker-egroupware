@@ -32,7 +32,7 @@ docker run -d \
 -p 10080:80 \
 -v /opt/egroupware/data:/var/lib/egroupware \
 --link mysql-egroupware:mysql \
-visol/egroupware:14.3.20160428
+visol/egroupware:17.1.20180831
 ```
 
 Point your browser to `http://localhost:10080/egroupware/setup/` and login with the defined username and password:

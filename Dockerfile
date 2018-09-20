@@ -61,7 +61,7 @@ RUN apt-get update \
 	&& tar -xzf jpgraph.tar.gz --strip-components=1 -C /var/www/html/jpgraph \
 	&& rm jpgraph.tar.gz
 
-ENV EGROUPWARE_VERSION 17.1.20180209
+ENV EGROUPWARE_VERSION 17.1.20180831
 
 RUN curl -o egroupware-epl.tar.bz2 -SL https://github.com/EGroupware/egroupware/releases/download/${EGROUPWARE_VERSION}/egroupware-epl-${EGROUPWARE_VERSION}.tar.bz2 \
 	&& tar -xjf egroupware-epl.tar.bz2 -C /var/www/html \
